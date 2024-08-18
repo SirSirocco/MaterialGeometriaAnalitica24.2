@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{
+    graphicx, 
+    amsfonts, 
+    amsmath, 
+    esvect
+} % Dependencias externas
+
+\title{Tabela de Notações de Geometria Analítica}
+\author{Pedro Barizon}
+\date{Agosto 2024}
+
+\begin{document}
+    \maketitle
+
+    \centering
+    % Aumenta a altura das linhas em 50%
+    \renewcommand{\arraystretch}{1.5}
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{|c|c|c|}
+                \hline
+                    \textbf{Significado} & \textbf{Notação oficial} & \textbf{Notação a evitar} \\
+                \hline
+                    distância entre X e Y & \(d(X, Y)\) & \(|X - Y|\) \\
+                \hline
+                    exemplo de escalar (em geral multiplicativo) & \(\lambda, \alpha\) (nessa ordem) & - \\
+                \hline
+                    exemplo de parâmetro & \(t, s\) (nessa ordem) & - \\
+                \hline
+                    exemplo de plano & \(ax + by + cz + d = 0\) & \(ax + by + cz = d\) \\
+                \hline
+                    exemplo de vetor & \(\vec{v}, \vec{u}, \vec{w}\) (nessa ordem) & - \\
+                \hline
+                    \(\vec{v}\) e \(\vec{u}\) são linearmente independentes & \(\vec{v}\) e \(\vec{u}\) não são múltiplos um do outro & - \\
+                \hline
+                    módulo de um vetor & \(\|\vec{v}\|\) & \(|\vec{v}|\) ou \(v\) \\
+                \hline
+                    \(\vec{v}\) e \(\vec{u}\) são ortogonais & \(\vec{v} \perp \vec{u}\) & - \\
+                \hline
+                    pontos do \(\mathbb{R}^n\) & \(\boldsymbol{P} = (a, b, c)\) ou \(\boldsymbol{P}\) ou \((a, b, c)\)  & \(\boldsymbol{P}(a, b, c)\) \\
+                \hline
+                    produto interno & \(\vec{v} \cdot \vec{u}\) & \(\langle \vec{v}, \vec{u}\rangle\) \\
+                \hline
+                    produto vetorial & \(\vec{v} \times \vec{u}\) & - \\
+                \hline
+                    projeção ortogonal de \(\vec{v}\) em \(\vec{u}\) & \(proj_{\vec{u}}(\vec{v})\) & \(\boldsymbol{P}_{\vec{u}}(\vec{v})\) \\
+                \hline
+                    vetor sem coordenadas & \(\vec{v}\) & \(\boldsymbol{v}\) \\
+                \hline
+                vetor com extremidade em pontos (digamos \(\boldsymbol{O}\) e \(\boldsymbol{P}\)) & \(\vv{\boldsymbol{OP}}\) & - \\
+                \hline
+                    vetor nulo & \(\vec{0}\) & \(\hat{0}\) \\
+                \hline
+                    base canônica & \(\hat{\imath}, \hat{\jmath}, \hat{k}\) & \(\hat{e}_1, \hat{e}_2, \hat{e}_3\) \\
+                \hline
+            \end{tabular}
+    }
+\end{document}
