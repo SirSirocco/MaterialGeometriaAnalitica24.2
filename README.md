@@ -2,7 +2,7 @@
 
 ## Observações gerais
 
-- Percebi que a notação de vetor construído a partir de um par de pontos (AB com uma seta em cima) e a de raiz quadrada ficaram desformatadas no MacBook que uso no trabalho. Talvez isso se repita em outros Macs.
+- Percebi que a notação de vetor construído a partir de um par de pontos (AB com uma seta em cima) e a de raiz quadrada ficaram desformatadas no MacBook que uso no trabalho. Talvez isso se repita em outros Macs (veja **erroFormatacaoMacGA**).
 
 ## Capítulo 1 - Coordenadas
 
@@ -16,7 +16,7 @@ Adequei as notações e corrigi pequenos erros de digitação. Ao final, senti f
 
 Adequei as notações. Ao final, não senti falta de exercícios. Percebi, porém, que, na questão 2, há duas respostas possíveis para P: uma com P entre A e B (APB), outra com P fora de AB (PAB). Sugeriria, portanto, que ou se restringisse o enunciado para considerar apenas a solução APB, ou se exibissem as duas respostas na resolução. Exibir apenas a solução APB pode ser confuso para os que tenham achado (também) PAB.
 
-## Capítulo 4 - Planos
+## Capítulo 4 - Planos e mais sobre vetores
 
 Adequei as notações e corrigi pequenos erros de digitação. Ao final, não senti falta de exercícios. Percebi, porém, que, na questão 1, foi empregado o conceito de **Independência Linear**, não previamente apresentado aos alunos. Por isso, sugeriria que essa parte da resolução fosse reescrita.
 
