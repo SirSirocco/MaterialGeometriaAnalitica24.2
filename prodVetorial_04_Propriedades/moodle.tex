@@ -1,0 +1,106 @@
+Agora que definimos o produto vetorial, é hora de fazermos mais umas continhas, para deduzirmos algumas propriedades interessantes.
+
+1. Antissimetria
+
+\[\forall \vec{v}, \vec{u} \in \mathbb{R}^3, (\vec{v} \times \vec{u}) = - (\vec{u} \times \vec{v})
+\]
+
+Sim, é isso mesmo: nem todo produto é comutativo. Isso explica por que fui tão enfático com a ordem de \(\vec{v}\) e de \(\vec{u}\).
+
+Para ver isso, notemos que
+
+\[
+\vec{v} \times \vec{u} = (v_2u_3 - v_3u_2,\quad -[v_1u_3 - v_3u_1],\quad v_1u_2 - v_2u_1)
+\]
+
+\(\Longleftrightarrow\) \[
+\vec{v} \times \vec{u} = - (v_3u_2 - v_2u_3,\quad -[v_3u_1 - v_1u_3],\quad v_2u_1 - v_1u_2)
+\] (colocando \(-1\) em evidência)
+
+\(\Longleftrightarrow\) \[
+\vec{v} \times \vec{u} = - (u_2v_3 - u_3v_2,\quad -[u_1v_3 - u_3v_1],\quad u_1v_2 - u_2v_1)
+\] (reorganizando)
+
+\(\Longleftrightarrow\) \[
+\vec{v} \times \vec{u} = - (\vec{u} \times \vec{v})
+\]
+
+ 
+
+2. Homogeneidade
+
+\[\forall \vec{v}, \vec{u} \in \mathbb{R}^3, \forall \lambda \in \mathbb{R}, (\lambda\vec{ v} \times \vec{u}) = (\vec{v} \times \lambda\vec{u}) = \lambda(\vec{v} \times \vec{u})
+\]
+
+Vamos provar isso:
+
+\[
+\left(\lambda\vec{v} \times \vec{u}\right) = ((\lambda v_2)u_3 - (\lambda v_3)u_2,\quad -[(\lambda v_1)u_3 - (\lambda v_3)u_1],\quad (\lambda v_1)u_2 - (\lambda v_2)u_1)
+\]
+
+\(\Longleftrightarrow\) \[
+\left(\lambda\vec{v} \times \vec{u}\right) = (\lambda [v_2u_3 - v_3u_2],\quad -\lambda [v_1u_3 - v_3u_1],\quad \lambda [v_1u_2 - v_2u_1])
+\]
+
+\(\Longleftrightarrow\) \[
+\left(\lambda\vec{v} \times \vec{u}\right) = \lambda (\vec{v} \times \vec{u})
+\]
+
+A igualdade \(\left(\vec{v} \times \lambda\vec{u}\right) = \lambda (\vec{v} \times \vec{u})\) se prova da mesma forma.
+
+ 
+
+3. Aditividade
+
+\[
+\forall \vec{v}, \vec{u}, \vec{w} \in \mathbb{R}^3, \vec{v} \times (\vec{u} + \vec{w}) = (\vec{v} \times \vec{u}) + (\vec{v} \times \vec{w})
+\]
+
+Prova:
+
+Digamos que \( \vec{v} = (v_1, v_2, v_3),\; \vec{u} = (u_1, u_2, u_3),\; \vec{w} = (w_1, w_2, w_3) \).
+
+Logo,
+
+\[
+\vec{v} \times (\vec{u} + \vec{w}) = (v_2(u_3 + w_3) - v_3(u_2 + w_2),\quad -[v_1(u_3 + w_3) - v_3(u_1 + w_1)],\quad v_1(u_2 + w_2) - v_2(u_1 + w_1))
+\]
+
+ 
+
+Donde,
+
+\[
+\vec{v} \times (\vec{u} + \vec{w}) = (v_2u_3 - v_3u_2,\quad -[v_1u_3 - v_3u_1],\quad v_1u_2 - v_2u_1) + \\
+\quad \quad \quad \quad \quad + \;(v_2w_3 - v_3w_2,\quad -[v_1w_3 - v_3w_1],\quad v_1w_2 - v_2w_1)
+\]
+
+\(\Longleftrightarrow\) \[
+\vec{v} \times (\vec{u} + \vec{w}) = (\vec{v} \times \vec{u}) + (\vec{v} \times \vec{w})
+\]
+
+ 
+
+Note que isso vale para as duas posições:
+
+\[
+(\vec{u} + \vec{w}) \times \vec{v} =-[\vec{v} \times (\vec{u} + \vec{w})]
+\]
+
+\(\Longleftrightarrow\) \[
+(\vec{u} + \vec{w}) \times \vec{v} =-[\vec{v} \times \vec{u} + \vec{v} \times \vec{w}]
+\]
+
+\(\Longleftrightarrow\) \[
+(\vec{u} + \vec{w}) \times \vec{v} =-[-(\vec{u} \times \vec{v}) - (\vec{w} \times \vec{v})]
+\]
+
+\(\Longleftrightarrow\) \[
+(\vec{u} + \vec{w}) \times \vec{v} =(\vec{u} \times \vec{v}) + (\vec{w} \times \vec{v})
+\]
+
+ 
+
+Conclusão
+
+O produto vetorial se comporta de uma maneira bem parecida com o produto escalar, tirando o fato de que o vetorial não é comutativo.

@@ -1,0 +1,257 @@
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >Agora que definimos o produto vetorial, é hora de fazermos mais umas
+    continhas, para deduzirmos algumas propriedades interessantes.</span
+  >
+</p>
+<h4>1. Antissimetria</h4>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\[\forall \vec{v}, \vec{u} \in \mathbb{R}^3, (\vec{v} \times \vec{u}) = -
+    (\vec{u} \times \vec{v})<br />\]<br /><br />Sim, é isso mesmo: nem todo
+    produto é comutativo. Isso explica por que fui tão enfático com a ordem de
+    \(\vec{v}\) e de \(\vec{u}\).</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >Para ver isso, notemos que</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\[<br />\vec{v} \times \vec{u} = (v_2u_3 - v_3u_2,\quad -[v_1u_3 -
+    v_3u_1],\quad v_1u_2 - v_2u_1)<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\(\Longleftrightarrow\) \[<br />\vec{v} \times \vec{u} = - (v_3u_2 -
+    v_2u_3,\quad -[v_3u_1 - v_1u_3],\quad v_2u_1 - v_1u_2)<br />\] (colocando
+    \(-1\) em evidência)</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\(\Longleftrightarrow\) \[<br />\vec{v} \times \vec{u} = - (u_2v_3 -
+    u_3v_2,\quad -[u_1v_3 - u_3v_1],\quad u_1v_2 - u_2v_1)<br />\]
+    (reorganizando)</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\(\Longleftrightarrow\) \[<br />\vec{v} \times \vec{u} = - (\vec{u} \times
+    \vec{v})<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span class="mce-nbsp-wrap" contenteditable="false"> </span>
+</p>
+<h4 dir="ltr" style="text-align: justify">2. Homogeneidade</h4>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\[\forall \vec{v}, \vec{u} \in \mathbb{R}^3, \forall \lambda \in
+    \mathbb{R}, (\lambda\vec{ v} \times \vec{u}) = (\vec{v} \times
+    \lambda\vec{u}) = \lambda(\vec{v} \times \vec{u})<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >Vamos provar isso:</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\[<br />\left(\lambda\vec{v} \times \vec{u}\right) = ((\lambda v_2)u_3 -
+    (\lambda v_3)u_2,\quad -[(\lambda v_1)u_3 - (\lambda v_3)u_1],\quad (\lambda
+    v_1)u_2 - (\lambda v_2)u_1)<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\(\Longleftrightarrow\) \[<br />\left(\lambda\vec{v} \times \vec{u}\right)
+    = (\lambda [v_2u_3 - v_3u_2],\quad -\lambda [v_1u_3 - v_3u_1],\quad \lambda
+    [v_1u_2 - v_2u_1])<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\(\Longleftrightarrow\) \[<br />\left(\lambda\vec{v} \times \vec{u}\right)
+    = \lambda (\vec{v} \times \vec{u})<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >A igualdade \(\left(\vec{v} \times \lambda\vec{u}\right) = \lambda (\vec{v}
+    \times \vec{u})\) se prova da mesma forma.</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    ><span class="mce-nbsp-wrap" contenteditable="false"> </span></span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+  >
+  </span>
+</p>
+<h4>3. Aditividade</h4>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\[<br />\forall \vec{v}, \vec{u}, \vec{w} \in \mathbb{R}^3, \vec{v} \times
+    (\vec{u} + \vec{w}) = (\vec{v} \times \vec{u}) + (\vec{v} \times \vec{w})<br />\]<br /><br />Prova:</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >Digamos que \( \vec{v} = (v_1, v_2, v_3),\; \vec{u} = (u_1, u_2, u_3),\;
+    \vec{w} = (w_1, w_2, w_3) \).</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >Logo,</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\[<br />\vec{v} \times (\vec{u} + \vec{w}) = (v_2(u_3 + w_3) - v_3(u_2 +
+    w_2),\quad -[v_1(u_3 + w_3) - v_3(u_1 + w_1)],\quad v_1(u_2 + w_2) - v_2(u_1
+    + w_1))<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    ><span class="mce-nbsp-wrap" contenteditable="false"> </span></span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >Donde,</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\[<br />\vec{v} \times (\vec{u} + \vec{w}) = (v_2u_3 - v_3u_2,\quad
+    -[v_1u_3 - v_3u_1],\quad v_1u_2 - v_2u_1) + \\<br />\quad \quad \quad \quad
+    \quad + \;(v_2w_3 - v_3w_2,\quad -[v_1w_3 - v_3w_1],\quad v_1w_2 -
+    v_2w_1)<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\(\Longleftrightarrow\) \[<br />\vec{v} \times (\vec{u} + \vec{w}) =
+    (\vec{v} \times \vec{u}) + (\vec{v} \times \vec{w})<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    ><span class="mce-nbsp-wrap" contenteditable="false"> </span></span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >Note que isso vale para as duas posições:</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\[<br />(\vec{u} + \vec{w}) \times \vec{v} =-[\vec{v} \times (\vec{u} +
+    \vec{w})]<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\(\Longleftrightarrow\) \[<br />(\vec{u} + \vec{w}) \times \vec{v}
+    =-[\vec{v} \times \vec{u} + \vec{v} \times \vec{w}]<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\(\Longleftrightarrow\) \[<br />(\vec{u} + \vec{w}) \times \vec{v}
+    =-[-(\vec{u} \times \vec{v}) - (\vec{w} \times \vec{v})]<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >\(\Longleftrightarrow\) \[<br />(\vec{u} + \vec{w}) \times \vec{v}
+    =(\vec{u} \times \vec{v}) + (\vec{w} \times \vec{v})<br />\]</span
+  >
+</p>
+<p dir="ltr" style="text-align: justify">
+  <span class="mce-nbsp-wrap" contenteditable="false"> </span>
+</p>
+<h5 dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >Conclusão</span
+  >
+</h5>
+<p dir="ltr" style="text-align: justify">
+  <span
+    class=""
+    style="font-size: medium; font-family: Arial, Helvetica, sans-serif"
+    >O produto vetorial se comporta de uma maneira bem parecida com o produto
+    escalar, tirando o fato de que o vetorial não é comutativo.</span
+  >
+</p>
