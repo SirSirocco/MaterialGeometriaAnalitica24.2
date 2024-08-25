@@ -1,0 +1,191 @@
+"Mas cadê a geometria?" Nesta seção, finalmente deduziremos propriedades geométricas do produto vetorial. Para isso, você acertou, faremos mais contas (são as últimas, prometo).
+
+
+
+
+Um certo sujeito, de nome Lagrange, começou a se questionar: "Como posso relacionar o produto escalar e o produto vetorial? Um produz um escalar; o outro, um vetor... Mas o módulo de um vetor é um escalar... Espera... ... E se..."
+
+Foi, então, que o senhor Lagrange decidiu fazer umas contas e ver no que ia dar. Vamos acompanhá-lo:
+
+Ele começou considerando dois vetores quaisquer \(\vec{v} = (v_1, v_2, v_3), \vec{u} = (u_1, u_2, u_3)\) e, em seguida, decidiu calcular quanto valia a soma de \((\vec{v} \cdot \vec{u})^2\) com \(\|\vec{v} \times \vec{u}\|^2\). 
+
+ 
+
+Antes de prosseguirmos, vale relembrarmos rapidamente dois produtos notáveis: 
+
+\((a-b)^2 = a^2 - 2ab + b^2\)
+
+\((a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ac\)
+
+ 
+
+Façamos a conta:
+
+\[
+(\vec{v} \cdot \vec{u})^2 + \|\vec{v} \times \vec{u}\|^2 = (v_1u_1 + v_2u_2 + v_3u_3)^2 + \|(v_2u_3 - v_3u_2,\quad -[v_1u_3 - v_3u_1],\quad v_1u_2 - v_2u_1)\|^2
+\]
+
+ 
+
+Usando o produto notável, vemos que
+
+\[
+(v_1u_1 + v_2u_2 + v_3u_3)^2 = v_1^2u_1^2 + v_2^2u_2^2 + v_3^2u_3^2 + 2v_1v_2u_1u_2 + 2v_2v_3u_2u_3 + 2v_1v_3u_1u_3
+\]
+
+ 
+
+Agora, usemos o fato de que \(\|\vec{v} \times \vec{u}\|^2\ = (\vec{v} \times \vec{u}) \cdot (\vec{v} \times \vec{u})\):
+
+Para simplificarmos as contas, vamos primeiro calcular somente a coordenada \(x\) ao quadrado:
+
+\[
+(v_2u_3 - v_3u_2)^2 = v_2^2u_3^2 - 2v_2v_3u_2u_3 + v_3^2u_2^2
+\]
+
+Percebam que curioso: o termo \(2v_2v_3u_2u_3\) está presente tanto em \((\vec{v} \cdot \vec{u})^2\) quanto \(\|\vec{v} \times \vec{u}\|^2\), porém com sinais distintos. Logo, será possível cancelá-los.
+
+ 
+
+Se fizermos isso para as demais coordenadas, veremos que algo análogo acontece. De fato,
+
+Coordenada \(y\)
+\[
+[-(v_1u_3 - v_3u_1)]^2 = v_1^2u_3^2 - 2v_1v_3u_1u_3 + v_3^2u_1^2
+\]
+
+ 
+
+Coordenada \(z\)
+\[
+(v_1u_2 - v_2u_1)^2 = v_1^2u_2^2 - 2v_1v_2u_1u_2 + v_2^2u_1^2
+\]
+
+ 
+
+Percebamos, ainda, algo um tanto curioso: nas nossas contas, apareceram exatamente nove termos da forma \(+ u_i^2v_j^2\), todos distintos entre si. No produto escalar, obtivemos os casos em que \(i = j\) e, no vetorial, os casos em que \(i \neq j\). Note que, não por acaso, 9 equivale ao número de arranjos \(ij\), com \(i\) e \(j\) indo de 1 até 3. Ou seja, concluímos que
+
+\[
+(\vec{v} \cdot \vec{u})^2 + \|\vec{v} \times \vec{u}\|^2 = v_1^2u_1^2 + v_1^2u_2^2 + v_1^2u_3^2 + v_2^2u_1^2 + v_2^2u_2^2 + v_2^2u_3^2 + v_3^2u_1^2 + v_2^2u_3^2 + v_3^2u_3^2
+\]
+
+
+ 
+
+Para concluirmos, notem que
+
+\[
+\|\vec{v}\|^2\|\vec{u}\|^2 = (v_1^2 + v_2^2 + v_3^2)(u_1^2 + u_2^2 + v_3^2) = v_1^2u_1^2 + v_1^2u_2^2 + v_1^2u_3^2 + v_2^2u_1^2 + v_2^2u_2^2 + v_2^2u_3^2 + v_3^2u_1^2 + v_2^2u_3^2 + v_3^2u_3^2
+\]
+
+ 
+
+Logo, somos capazes de concluir a Identidade de Lagrange
+
+
+
+
+\[
+\|\vec{v}\|^2\|\vec{u}\|^2 = (\vec{v} \cdot \vec{u})^2 + \|\vec{v} \times \vec{u}\|^2
+\]
+
+ 
+
+Elegante, não é?
+
+Agora sim: vamos à geometria!
+
+
+
+
+Retomemos a definição geométrica de produto escalar \(\vec{v} \cdot \vec{u} = \|\vec{v}\|\|\vec{u}\|\cos(\theta)\), em que \(\theta\) pode ser tomado tanto como o menor quanto como o maior ângulo entre \(\vec{v}\) e \(\vec{u}\), já que estes possuem o mesmo valor de cosseno.
+
+
+
+
+Em termos da figura, isso significa que poderíamos tomar tanto \(\theta = \alpha\) quanto \(\theta = \beta\), uma vez que \(\cos(\alpha) = \cos(\beta)\), porque esses ângulos são replementares, isto é, sua some equivale a \(2\pi \) rad. Isso fica evidente porque
+
+\[
+\cos(\alpha) = \cos(2\pi - \beta) = \cos(2\pi)\cos(\beta) + \sin(2\pi)\sin(\beta) = \cos(\beta)
+\]
+
+ 
+
+Por simplicidade, em geral tomamos sempre o menor ângulo.
+
+
+
+
+Com isso mente, substituamos o valor da definição geométrica na Identidade de Lagrange:
+
+\[
+\|\vec{v}\|^2\|\vec{u}\|^2 = (\vec{v} \cdot \vec{u})^2 + \|\vec{v} \times \vec{u}\|^2
+\]
+
+\(\Longleftrightarrow\) \[
+\|\vec{v}\|^2\|\vec{u}\|^2 = \|\vec{v}\|^2\|\vec{u}\|^2[\cos(\theta)]^2 + \|\vec{v} \times \vec{u}\|^2
+\]
+
+\(\Longleftrightarrow\) \[
+\|\vec{v} \times \vec{u}\|^2 = \|\vec{v}\|^2\|\vec{u}\|^2\{[1 - [\cos(\theta)]^2 \}
+\]
+
+ 
+
+A Identidade Fundamental da Trigonometria nos dá 
+
+\[
+1 - [\cos(\theta)]^2 = [\sin(\theta)]^2
+\]
+
+Logo, substituindo o valor obtido e extraindo a raiz quadrada de ambos os lados, temos que
+
+\[
+\|\vec{v} \times \vec{u}\| = \|\vec{v}\|\|\vec{u}\||\sin(\theta)|
+\]
+
+ 
+
+Ou seja, conseguimos deduzir quanto vale o módulo de \(\vec{v} \times \vec{u}\). Note que, como consideramos \(|\sin(\theta)|\), não faz diferença neste caso considerarmos \(\theta = \alpha\) ou \(\theta = \beta\), pois
+
+\[
+\sin(\alpha) = \sin(2\pi - \beta) = \sin(2\pi)\cos(\beta) - \sin(\beta)\cos(2\pi) = - \sin(\beta)
+\]
+
+\( \Longrightarrow \) \[
+|\sin(\alpha)| = |\sin(\beta)|
+\]
+
+ 
+
+Mas e quanto ao sentido de \(\vec{v} \times \vec{u}\)? Se pararmos para pensar, já possuímos duas das três condições que definem um vetor: direção (ortogonal a \(\vec{v} \times \vec{u}\)) e módulo \(\left(|\vec{v}\|\|\vec{u}\||\sin(\theta)|\right)\). Só falta o sentido.
+
+A chave para isso parecer estar na escolha de \(\theta\), porque, quando trocamos a ordem de \(\vec{v}\) e \(\vec{u}\), o vetor resultante troca de sentido. Isso deve ter acontecido porque a alteração na ordem dos operandos mudou a forma como escolhemos \(\theta\), que, por sua vez, provoca uma mudança de sinal no valor do seno.
+
+
+
+
+Diante desse impasse, foi preciso definir uma convenção: a Regra da Mão Direita (me desculpem, canhotos).
+
+Ela define o sentido do vetor resultante do produto vetorial. Para aplicá-la, siga estes passos, supondo que queiramos calcular \(\vec{v} \times \vec{u}\):
+
+1. Identifique o primeiro vetor (neste caso, \(\vec{v}\)).
+
+2. Identifique visualmente qual o menor ângulo entre \(\vec{v}\) e \(\vec{u}\). Se os ângulos forem iguais, sabemos que, necessariamente, \(\theta = \pi\) rad, o que significa \(\sin(\theta) = \sin(\pi) = 0\), donde o resultado do produto será o vetor nulo.
+
+3. Posicione sua mão DIREITA (muita atenção, canhotos!) sobre o primeiro vetor e tente fechar os quatro dedos não polegares seguindo o sentido de rotação \(\vec{v}\) para \(\vec{u}\) ao longo do menor ângulo entre eles. É possível que, para fazer isso, seja necessário girar o seu braço, colocando o polegar ou para cima, ou para baixo. É justamente o sentido do polegar que indicará o sentido do vetor resultante.
+
+ 
+
+Observação
+
+Para verificar esse dinamismo cima-baixo do polegar, use a regra da mão direita para obter o sentido de \(\vec{v} \times \vec{u}\) e depois de \(\vec{u} \times \vec{v}\) na figura acima. No primeiro caso, seu polegar deve "entrar na tela"; no segundo, deve "sair da tela".
+
+Caso queira algo mais visual, dê uma olhada neste vídeo:
+
+https://youtu.be/AWzl_6v1_rc
+
+ 
+Conclusão
+
+Para concluir, percebam que a diferença na escolha de \(\theta\) é manifestada no sentido de rotação da mão direita. Se em \(\vec{v} \times \vec{u}\) rodarmos no sentido horário, em \(\vec{u} \times \vec{v}\) rodaremos no anti-horário, e vice-versa. Ou seja, se em um considerarmos \(\theta = \alpha\), no outro consideramos \(\theta = -\alpha\), que possui o mesmo valor de seno que \(\beta\), como você poderá verificar. 
