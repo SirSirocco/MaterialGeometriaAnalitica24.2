@@ -1,102 +1,346 @@
-<p style="text-align: left">Talvez pareça estranho, mas me permitam escrever</p>
-<p style="text-align: center">
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  Talvez pareça estranho, mas me permitam escrever
+</p>
+<p
+  style="
+    text-align: center;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
   \( \left( \left \{ \begin{array}{rcl} \vec{v} \cdot \vec{w} &amp;=&amp; 0 \\
-  \vec{u} \cdot \vec{w} &amp;=&amp; 0  \end{array} \right. \right) \) \( =
+  \vec{u} \cdot \vec{w} &amp;=&amp; 0 \end{array} \right. \right) \) \( =
    \vec{w} = (v_2u_3 - v_3u_2,\quad -[v_1u_3 - v_3u_1],\quad v_1u_2 - v_2u_1) \)
 </p>
-<p style="text-align: left">
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
   <span class="mce-nbsp-wrap" contenteditable="false"> </span>
 </p>
-<p style="text-align: left">
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
   Isso quer dizer que, dado o sistema de equações em que \(\vec{v}\) compõe a
   primeira linha e \(\vec{u}\) a segunda
   <strong>(atente para esta ordem)</strong>, o vetor \(\vec{w}\) é uma
   solução.<br /><br />Note que, assim, fica nítido um padrão:
 </p>
-<ol style="text-align: left">
-  <li>
-    A coordenada 1 de \(\vec{w}\) só tem termos com índices 2 ou 3. O análogo
-    vale para as demais.
+<ol
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <li style="font-style: italic">
+    <em
+      >A coordenada 1 de \(\vec{w}\) só tem termos com índices 2 ou 3. O análogo
+      vale para as demais.</em
+    >
   </li>
-  <li>
-    Escrevemos sempre \(v_iu_j - v_ju_i\), com \(j &gt; i\). Cabe lembrar o
-    sinal de menos na segunda coordenada de \(\vec{w}\). Neste caso, \(\vec{v}\)
-    deve ter dado origem à primeira linha do sistema de equações, porque, como
-    veremos mais adiante, a ordem de \(\vec{v}\) e de \(\vec{u}\) impacta o
-    resultado.
+  <li style="font-style: italic">
+    <em
+      >Escrevemos sempre \(v_iu_j - v_ju_i\), com \(j &gt; i\). Cabe lembrar o
+      sinal de menos na segunda coordenada de \(\vec{w}\). Neste caso,
+      \(\vec{v}\) deve ter dado origem à primeira linha do sistema de equações,
+      porque, como veremos mais adiante, a ordem de \(\vec{v}\) e de \(\vec{u}\)
+      impacta o resultado.</em
+    >
   </li>
 </ol>
-<p style="text-align: left">
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
   Queiramos ou não, isso define uma espécie de receita para produzirmos um vetor
   ortogonal a um certo par de vetores \(\vec{v}, \vec{u}\). Como cada coordenada
   envolve um produto de números, e como o resultado dessa "receita" é um vetor,
-  decidiram defini-la como uma operação:
-  <strong>O Produto Vetorial</strong>.<br /><br />Simbolicamente,
+  decidiram defini-la como uma operação: <strong>o Produto Vetorial</strong>.
 </p>
-<p style="text-align: left">
-  \[<br />\vec{v} \times \vec{u} = (v_2u_3 - v_3u_2,\quad -[v_1u_3 -
-  v_3u_1],\quad v_1u_2 - v_2u_1)<br />\], em que \(\vec{v}\) corresponde à
-  primeira linha no sistema que resolvemos há pouco.<br /><br />"Mas por que um
-  \(\times\)?", você pode estar se perguntando...<br /><br />Os matemáticos
-  encontraram uma forma bem visual de calcular esse produto (que, em inglês,
-  recebe o nome de <em>Cross Product</em>):<br /><br />
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  Simbolicamente,
 </p>
 <p>
+  \[<br />\vec{v} \times \vec{u} = (v_2u_3 - v_3u_2,\quad -[v_1u_3 -
+  v_3u_1],\quad v_1u_2 - v_2u_1)<br />\], em que \(\vec{v}\) corresponde à
+  primeira linha no sistema que resolvemos há pouco.
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <span class="mce-nbsp-wrap" contenteditable="false"> </span>
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  "Mas por que um \(\times\)?", você pode estar se perguntando...<br /><br />Os
+  matemáticos encontraram uma forma bem visual de calcular esse produto (que, em
+  inglês, recebe o nome de <em>Cross Product</em>):
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
   <strong>1.</strong><em> </em>Escreva três linhas, cada qual com três colunas,
   entre duas barras verticais:
 </p>
-<p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 40px;
+  "
+>
   <em><strong>a.</strong></em> Na primeira, escreva \(\hat{i}\), \(\hat{j}\) e
   \(\hat{k}\), que representam, respectivamente, as coordenadas \(x\), \(y\) e
-  \(z\).<br /><em><strong>b.</strong></em> Na segunda linha, para cada coluna,
-  coloque a coordenada do primeiro vetor do produto (neste caso, \(\vec{v}\))
+  \(z\).
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 40px;
+  "
+>
+  <em><strong>b.</strong></em> Na segunda linha, para cada coluna, coloque a
+  coordenada do primeiro vetor do produto (neste caso, \(\vec{v}\))
   correspondente ao elemento na linha de cima. Por exemplo, embaixo de
-  \(\hat{i}\) deve vir \(v_1\).<br /><em><strong>c.</strong></em> Na terceira,
-  repita o processo para o segundo vetor do produto.
+  \(\hat{i}\) deve vir \(v_1\).
 </p>
-<p style="text-align: left">
-  Por exemplo, para calcularmos \((1, 2, 3) \times (4, 5, 6)\), faremos<br /><br />\[<br />\begin{vmatrix}
-  \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6
-  \end{vmatrix}<br />\]<br /><br /><strong>2.</strong> Para cada elemento da
-  primeira linha, tape o restante da coluna e da linha em que este se encontra.
-  Sobrarão quatro números.<br /><br />No nosso caso,<br /><br />\[<br />\hat{i}
-  \to \begin{vmatrix} 2 &amp; 3 \\ 5 &amp; 6 \end{vmatrix}<br />\]
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 40px;
+  "
+>
+  <em><strong>c.</strong></em> Na terceira, repita o processo para o segundo
+  vetor do produto.
 </p>
-<p style="text-align: left">
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <span class="mce-nbsp-wrap" contenteditable="false"> </span>
+</p>
+<p
+  style="
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  "
+>
+  Por exemplo, para calcularmos \((1, 2, 3) \times (4, 5, 6)\), faremos
+</p>
+<p
+  style="
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  "
+>
+  \[<br />\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 1 &amp; 2 &amp;
+  3 \\ 4 &amp; 5 &amp; 6 \end{vmatrix}<br />\]
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <span class="mce-nbsp-wrap" contenteditable="false"> </span>
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <strong>2.</strong> Para cada elemento da primeira linha, tape o restante da
+  coluna e da linha em que este se encontra. Sobrarão quatro números.<br /><br />No
+  nosso caso,
+</p>
+<p
+  style="
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  "
+>
+  \[<br />\hat{i} \to \begin{vmatrix} 2 &amp; 3 \\ 5 &amp; 6 \end{vmatrix}<br />\]
+</p>
+<p
+  style="
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  "
+>
   <br />\[<br />\hat{j} \to \begin{vmatrix} 1 &amp; 3 \\ 4 &amp; 6
   \end{vmatrix}<br />\]
 </p>
-<p style="text-align: left">
+<p
+  style="
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  "
+>
   <br />\[<br />\hat{k} \to \begin{vmatrix} 1 &amp; 2 \\ 4 &amp; 5
-  \end{vmatrix}<br />\]<br /><br />Cada um desses blocos produzirá a coordenada
-  respectiva ao elemento da primeira linha associado — ou seja, ao taparmos a
-  linha e a coluna de \(\hat{i}\), encontraremos o bloco respectivo à coordenada
-  1, e assim em diante. É preciso atentar, todavia, que, à semelhança do que
-  tínhamos feito antes, será necessário colocar um sinal de menos na segunda
-  coordenada:<br /><br />\[ (1, 2, 3) \times (4, 5, 6) = <br />\left(<br />\begin{vmatrix}
-  2 &amp; 3 \\ 5 &amp; 6 \end{vmatrix},\quad<br />-\begin{vmatrix} 1 &amp; 3 \\
-  4 &amp; 6 \end{vmatrix},\quad<br />\begin{vmatrix} 1 &amp; 2 \\ 4 &amp; 5
-  \end{vmatrix}<br />\right)<br />\]<br /><br /><strong>3.</strong> Para
-  terminar, devemos fazer a "cruz" (\(\times\)): pegamos o termo no canto
-  superior esquerdo e multiplicamos pelo inferior direito. Em seguida,
-  calculamos a diferença entre esse valor e o produto dos outros dois números
-  (trace mentalmente duas diagonais representando as multiplicações e você verá
-  a "cruz"). Por exemplo,<br /><br />\[<br />\begin{vmatrix} 2 &amp; 3 \\ 5
-  &amp; 6 \end{vmatrix} = 2 \cdot 6\;- 3 \cdot 5<br />\]<br /><br />Assim,<br /><br />\[
-  (1, 2, 3) \times (4, 5, 6) = <br />\left(<br />\begin{vmatrix} 2 &amp; 3 \\ 5
+  \end{vmatrix}<br />\]
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <span class="mce-nbsp-wrap" contenteditable="false"> </span>
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  Cada um desses blocos produzirá a coordenada respectiva ao elemento da
+  primeira linha associado — ou seja, ao taparmos a linha e a coluna de
+  \(\hat{i}\), encontraremos o bloco respectivo à coordenada 1, e assim em
+  diante. É preciso atentar, todavia, que, à semelhança do que tínhamos feito
+  antes, será necessário colocar um sinal de menos na segunda coordenada:<br /><br />\[
+  (1, 2, 3) \times (4, 5, 6) =<br />\left(<br />\begin{vmatrix} 2 &amp; 3 \\ 5
   &amp; 6 \end{vmatrix},\quad<br />-\begin{vmatrix} 1 &amp; 3 \\ 4 &amp; 6
   \end{vmatrix},\quad<br />\begin{vmatrix} 1 &amp; 2 \\ 4 &amp; 5
-  \end{vmatrix}<br />\right)<br />\]<br /><br />\(\Longleftrightarrow\) \[ (1,
-  2, 3) \times (4, 5, 6) = <br />\left(<br />2 \cdot 6\;- 3 \cdot 5,\quad<br />-[1
-  \cdot 6\;- 3 \cdot 4],\quad<br />1 \cdot 5\; - 2 \cdot 4<br />\right)<br />\]
+  \end{vmatrix}<br />\right)<br />\]
 </p>
-<p style="text-align: left">
-  \(\Longleftrightarrow\) \[ (1, 2, 3) \times (4, 5, 6) = <br />\left(<br />-3
-  ,<br />6,<br />-3<br />\right)<br />\]<br /><br />Essa "cruz" explica o porquê
-  do símbolo e do nome em inglês.<br /><br />Para aqueles que conheçam matrizes,
-  o processo que fizemos equivale a calcular o determinante \( \begin{vmatrix}
-  \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6
-  \end{vmatrix} \) tomando certa liberdade poética em considerar \( \hat{i},
-  \hat{j},\hat{k} \) como se estes se comportassem à maneira de números reais.
-  Seja como for, fato é que funciona.
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <strong><span class="mce-nbsp-wrap" contenteditable="false"> </span></strong>
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <strong>3.</strong> Para terminar, devemos fazer a "cruz" (\(\times\)):
+  pegamos o termo no canto superior esquerdo e multiplicamos pelo inferior
+  direito. Em seguida, calculamos a diferença entre esse valor e o produto dos
+  outros dois números (trace mentalmente duas diagonais representando as
+  multiplicações e você verá a "cruz"). Por exemplo,
+</p>
+<p
+  style="
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  "
+>
+  \[<br />\begin{vmatrix} 2 &amp; 3 \\ 5 &amp; 6 \end{vmatrix} = 2 \cdot 6\;- 3
+  \cdot 5<br />\]
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <span class="mce-nbsp-wrap" contenteditable="false"> </span>
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  Assim,<br /><br />\[ (1, 2, 3) \times (4, 5, 6) =<br />\left(<br />2 \cdot
+  6\;- 3 \cdot 5,\quad<br />-[1 \cdot 6\;- 3 \cdot 4],\quad<br />1 \cdot 5\; - 2
+  \cdot 4<br />\right)<br />\]
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  \(\Longleftrightarrow\) \[ (1, 2, 3) \times (4, 5, 6) =<br />\left(<br />-3
+  ,<br />6,<br />-3<br />\right)<br />\]
+</p>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  <span class="mce-nbsp-wrap" contenteditable="false"> </span>
+</p>
+<p>Essa "cruz" explica o porquê do símbolo e do nome em inglês.</p>
+<p><span class="mce-nbsp-wrap" contenteditable="false"> </span></p>
+<h5>Observação</h5>
+<p
+  style="
+    text-align: justify;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+  "
+>
+  Para aqueles que conheçam matrizes, o processo que fizemos equivale a calcular
+  o determinante \( \begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 1
+  &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \end{vmatrix} \) tomando certa liberdade
+  poética em considerar \( \hat{i}, \hat{j},\hat{k} \) como se estes se
+  comportassem à maneira de números reais. Seja como for, fato é que funciona.
 </p>
