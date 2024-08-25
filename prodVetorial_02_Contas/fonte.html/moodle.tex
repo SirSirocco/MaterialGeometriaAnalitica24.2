@@ -1,0 +1,85 @@
+Vamos atacar o problema com as ferramentas que já conhecemos. Consideremos dois vetores \(\vec{v} = (v_1, v_2, v_3), \vec{u} = (u_1, u_2, u_3)\) não múltiplos um do outro. Nosso objetivo será determinar \(\vec{w} = (x, y, z)\) simultaneamente ortogonal a ambos. Evidentemente, deve ser que \(\vec{v} \cdot \vec{w} = 0\) e \(\vec{u} \cdot \vec{w} = 0\). Considerarmos as duas condições ao mesmo tempo se traduz em resolvermos o sistema dessas equações.
+
+\(
+\left \{ \begin{array}{rcl} \vec{v} \cdot \vec{w} &=& 0 \\ \vec{u} \cdot \vec{w} &=& 0  \end{array} \right.
+\)
+
+\(\Longleftrightarrow\) \(
+\left \{ \begin{array}{rcl} v_1x + v_2y + v_3z &=& 0 \\ u_1x + u_2y + u_3z &=& 0  \end{array} \right.
+\)
+
+ 
+
+Como \(\vec{v}\) e \(\vec{u}\) não são múltiplos um do outro, podemos interpretar a solução do sistema como a interseção de dois planos não paralelos, que necessariamente se intersectam ao longo de uma reta. Assim, será possível escalonarmos o sistema. Para simplificarmos o raciocínio, não faz mal supormos \(v_1 \neq 0\). Dessa forma,
+
+\(\Longleftrightarrow\) \(
+\left \{ \begin{array}{rcl} x + \frac{v_2}{v_1}y + \frac{v_3}{v_1}z &=& 0 \\ 0 + \left(u_2 - u_1\frac{v_2}{v_1}\right)y + \left(u_3 - u_1\frac{v_3}{v_1}\right)z &=& 0  \end{array} \right.
+\)
+
+ 
+
+Agora, será preciso definirmos um parâmetro. Novamente, para simplificarmos o raciocínio, consideremos que os coeficientes de \(y\) e de \(z\) são diferentes de \(0\).
+
+Definindo \(t = z\) o parâmetro, temos que
+
+\[
+y = t \left( \frac{v_3u_1 \; - \; v_1u_3}{v_1u_2 \; - \; v_2u_1} \right)
+\]
+
+ 
+
+Assim, substituindo na primeira equação, obteremos
+
+\[
+x = t \left( \frac{v_1v_2u_3 \; - \; v_2v_3u_1}{v_1(v_1u_2 \; - \; v_2u_1)} \; - \; \frac{v_3}{v_1} \right)
+\]
+
+\[
+\Longleftrightarrow x = t \left( \frac{v_1v_2u_3 \; - \; v_2v_3u_1 \; + \; v_2v_3u_1 \; - \; v_1v_3u_2}{v_1(v_1u_2 \; - \; v_2u_1)} \right)
+\]
+
+\[
+\Longleftrightarrow x = t \left( \frac{v_2u_3 \; - \; v_3u_2}{v_2u_1 \; - \; v_1u_2} \right)
+\]
+
+
+
+
+Logo, as soluções são da forma
+
+\[
+\vec{w} = t \left( \left[ \frac{v_2u_3 \; - \; v_3u_2}{v_2u_1 \; - \; v_1u_2} \right], \left[ \frac{v_3u_1 \; - \; v_1u_3}{v_2u_1 \; - \; v_1u_2} \right], 1 \right) 
+\], com \(t \in \mathbb{R}\)
+
+
+
+
+Vamos escolher um \(t\) conveniente. O que acham de \(t = v_1u_2 - v_2u_1\)?
+
+\[
+\Longrightarrow \vec{w} = \left(\ v_2u_3 - v_3u_2,\quad v_3u_1 - v_1u_3,\quad v_1u_2 - v_2u_1\right)
+\]
+
+ 
+
+Implicitamente, supomos que \(v_1u_2 - v_2u_1 \neq 0\), já que esse era o denominador. Verifiquemos, porém, que a fórmula obtida é válida mesmo que \(v_1u_2 - v_2u_1 = 0\)
+
+De fato,
+
+\[
+\vec{w} \cdot \vec{u} = (\ v_2u_3 - v_3u_2, v_3u_1 - v_1u_3, v_1u_2 - v_2u_1) \cdot (u_1, u_2, u_3)
+\]
+
+\[
+\Longleftrightarrow \vec{w} \cdot \vec{u} = v_2u_1u_3 - v_3u_1u_2 + v_3u_1u_2 - v_1u_2u_3 + v_1u_2u_3 - v_2u_1u_3 
+\]
+
+\[
+\Longleftrightarrow \vec{w} \cdot \vec{u} = (v_2u_1u_3 - v_2u_1u_3) + (v_3u_1u_2 - v_3u_1u_2) + (v_1u_2u_3 - v_1u_2u_3) 
+\]
+
+\[
+\Longleftrightarrow \vec{w} \cdot \vec{u} = 0
+\]
+
+Idem vale para \(\vec{v}\), como você poderá verificar.
